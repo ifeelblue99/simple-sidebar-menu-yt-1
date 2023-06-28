@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        a {
+            display: block;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        #menu {
+            transform: translateX(-150px);
+            background-color: lightblue;
+            width: 150px;
+            height: 250px;
+            padding: 7px;
+            border-radius: 7px;
+            transition: transform 2000ms linear;
+        }
+        #menu:target {
+            transform: translateX(0px);
+        }
+    </style>
+    <a href="#menu">
+        Menu Aç
+    </a>
+    <div id="menu">
+        <a href="#">
+            Menuyu Kapat
+        </a>
+        Menu içeriği
+    </div>
+</body>
+</html>
